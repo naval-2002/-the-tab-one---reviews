@@ -1,5 +1,5 @@
 function Bottom(props) {
-  const { title, company, duties, dates } = props.data;
+  const { title, company, duties, dates } = props;
 
   return (
     <div>

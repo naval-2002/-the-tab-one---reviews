@@ -1,30 +1,20 @@
-function Side({ datahandler }) {
+function Side(props) {
+  console.log(props);
+  // const companies = props.datahandler;
+
   return (
     <div>
-      <button
-        type="button"
-        onClick={() => {
-          datahandler("TOMMY");
-        }}
-      >
-        TOMMY
-      </button>
-      <button
-        type="button"
-        onClick={() => {
-          datahandler("BIGDROP");
-        }}
-      >
-        BIGDROP
-      </button>
-      <button
-        type="button"
-        onClick={() => {
-          datahandler("CUKER");
-        }}
-      >
-        CUKER
-      </button>
+      {/* {props.map((val) => {
+        return (
+          <button
+            onClick={() => {
+              props.datahandler(val);
+            }}
+          >
+            {val}
+          </button>
+        );
+      })} */}
     </div>
   );
 }
